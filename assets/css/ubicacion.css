@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+	margin: auto;
+}
+
+header{
+    background-color: #ffa500;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+
+Menu Desplegable
+			#menu {
+				margin:auto;
+				font-family:Arial, Helvetica, sans-serif;
+				list-style: none;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav{
+				display: grid;
+				grid-template-columns: repeat(5,1fr);
+			}
+
+			.nav li{
+				width: 100%;
+				height: 100%;
+				background-color: #ffa500;
+				padding:12px;
+				overflow: hidden;
+				font-size: 2.125vh;
+			}
+
+			.nav li:hover{
+				background-color: #cc8400; 
+			}
+			
+			.nav > li {
+				float:left;
+                text-align: center;
+			}
+			
+			.nav li a {
+				color:#fff;
+				text-decoration:none;
+			}
+			
+			.nav li a:hover {
+				background-color: #cc8400;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				position: absolute;
+				top: 5.7%;
+				left: 20%;
+				z-index: 1;
+				display:block;
+			}
+
+
+nav{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    width: 100%;
+    height: 13vh;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    font-family: Lilita One;
+    text-transform: uppercase;
+    font-size: 35pt;
+    animation: titulo 5s infinite alternate-reverse ;
+}
+
+@keyframes titulo {
+    0%{
+        font-size: 20pt;
+        color: black;
+    }
+
+    50%{
+        color: aliceblue;
+    }
+
+    100%{
+        font-size: 35pt;
+        text-shadow:  2px 2px 3px black ,-2px -2px 3px rgb(21, 21, 224);
+    }
+}
+
+main{
+    margin: 0.5%;
+    font-family: Raleway;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #ffa500;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 25pt;
+}
+
+.textoUtil{
+    margin-bottom: 1.5%;
+}
+
+p{
+    display: inline;
+    font-size: 11pt;
+}
+
+#num a{
+    color: green;
+    font-weight: 1000;
+}
+
+form{
+    padding: 0.5%;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 0.5%;
+    grid-template-areas: "izquierda derecha"
+                         "medioI medioD"
+                         "abajo abajo"
+                         "enviarI enviarD";
+}
+
+input{
+    margin: 5pt;
+    width: 100%;
+    height: 5vh;
+    border-radius: 25px;
+    font-size: large;
+    font-family: Raleway;
+    padding: 25px;
+}
+
+.name{
+    grid-area: izquierda;
+}
+
+.direc{
+    grid-area: derecha;
+}
+
+.correo{
+    grid-area: medioI;
+}
+
+.telefono{
+    grid-area: medioD;
+}
+
+.mensaje{
+    border-color: black;
+    font-size: large;
+    font-family: Raleway;
+    overflow: auto;
+    padding: 1%;
+    border-radius: 25px;
+    width: 100%;
+    height: 20vh;
+    grid-area:  abajo;
+}
+
+.boton{
+    background-color: #ffa500;
+    width: 45%;
+    grid-area: enviarD;
+    text-align: center;
+    padding: 2px;
+    position: relative;
+    left: 27.5%;
+}
+
+.boton:hover{
+    background-color: #cc8400;
+    cursor: pointer;
+}
+
+.ubicacion{
+    margin-top: 2.5%;
+}
+
+.textoUtil a img{
+    height: 3vh;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+a{
+    text-decoration: none;
+	color: #ffa500;
+}
+
+.info{
+	color: #ffa500;
+	text-align: center;
+    font-weight: 100;
+	font-size: 15pt;
+	font-family: Raleway;
+}
+
+.info img{
+    padding-top: 1%;
+	width: 3%;
+	height: 3vh;
+}
+
+footer a .info:hover{
+	transition: 500ms;
+	background-color: #cc8400;
+	color: white;
+}
